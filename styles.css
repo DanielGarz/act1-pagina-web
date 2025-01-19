@@ -1,1 +1,167 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header .descripcion {
+  font-size: 1.2rem;
+}
+
+#proyectos {
+  margin-top: 30px;
+}
+
+#proyectos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.proyecto {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.proyecto p {
+  margin-bottom: 10px;
+}
+
+.proyecto .enlace {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: 1px solid #000000;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.proyecto .enlace:hover {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+  background: rgb(0, 0, 0);
+  border: 1px solid #ffffff;
+}
+
+#contacto {
+  margin-top: 50px;
+}
+
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #000000;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+}
+
+form button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: rgb(0, 0, 0);
+  border: 1px solid #000000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  .proyecto {
+      padding: 10px;
+  }
+
+  form input, form textarea, form button {
+      font-size: 0.9rem;
+  }
+}
