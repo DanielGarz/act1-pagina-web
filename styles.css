@@ -73,7 +73,6 @@ header .descripcion {
 
 .proyecto .enlace:hover {
   color: hsl(0, 0%, 100%);
-  text-decoration: underline;
   background: rgb(0, 0, 0);
   border: 1px solid #ffffff;
 }
@@ -143,7 +142,7 @@ footer ul li {
 }
 
 footer ul li a {
-  color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 
